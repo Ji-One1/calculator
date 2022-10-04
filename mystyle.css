@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap%27');
 
 body{
     display: flex;
@@ -12,10 +13,18 @@ body{
 .header, .footer{
     padding-top: 1em;
     padding-bottom: 6em;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(252, 248, 243);
+    font-size: xx-large;
+    font-weight: 700;
+    text-decoration: underline;
 }
 .footer{
     margin-top: auto;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
+    font-weight: 400;
+    font-size: large;
+
 }
 .calculator-structure{
     padding: 17px 17px 17px 17px;
@@ -23,17 +32,29 @@ body{
     background-color: rgb(251, 227, 192);
     border-radius: 12px;
 }
-.window{
+.window-container{
     margin-top: 5px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     height: 5em;
     background-color: rgb(87, 58, 23);
     margin-bottom: 2em;
     color: rgb(255, 255, 255);
     border-radius: 8px; 
     padding-right: 1em;
-    padding-top: 3em;
+    padding-top: 0.5em;
+}
+.small-window{
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+.window{
+    font-size: 25px;
+}
+    
+.window, .small-window{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
